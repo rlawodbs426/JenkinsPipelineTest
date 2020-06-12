@@ -17,8 +17,7 @@ pipeline {
 
         stage('test3') {
           steps {
-            sh '''cd springboot-jenkins-docker-slack && ls -al && chmod 755 gradlew
-  &&   ls -al'''
+            sh 'cd springboot-jenkins-docker-slack && ls -al && chmod 755 gradlew'
           }
         }
 
