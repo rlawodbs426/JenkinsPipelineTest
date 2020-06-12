@@ -15,6 +15,12 @@ pipeline {
           }
         }
 
+        stage('test3') {
+          steps {
+            sh 'cd springboot-jenkins-docker-slack && ./gradlew clean test'
+          }
+        }
+
       }
     }
 
