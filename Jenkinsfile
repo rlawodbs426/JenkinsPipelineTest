@@ -9,13 +9,13 @@ pipeline {
           }
         }
 
-        stage('test2') {
+        stage('github_status') {
           steps {
             sh 'ls -al'
           }
         }
 
-        stage('test3') {
+        stage('build_spring') {
           steps {
             sh 'cd springboot-jenkins-docker-slack && ls -al && chmod 755 gradlew && ls -al && ./gradlew clean test'
           }
